@@ -1,4 +1,4 @@
-### Cutebold Assemblies for Rimworld
+### Argonians of Black Marsh for Rimworld
 
 This is the Xml module for the Argonians of Black Marsh Race mod for Rimworld.
 
