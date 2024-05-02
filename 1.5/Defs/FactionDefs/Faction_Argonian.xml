@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Abstract -->
+	<FactionDef ParentName="FactionBase" Abstract="True" Name="ArgoFactionBase">
+		<!-- Pawns -->
+		<pawnSingular>Argonian</pawnSingular>
+		<pawnsPlural>Argonians</pawnsPlural>
+		<forageabilityFactor>2</forageabilityFactor>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</apparelStuffFilter>
+		<!-- TODO: Settlement/Faction Name Makers-->
+		<!-- Settlement -->
+		<label>Argonian Tribe</label>
+		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+		<settlementTexturePath>World/ArgoBase</settlementTexturePath>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<!-- Faction -->
+		<factionNameMaker>NamerFactionTribal</factionNameMaker>
+		<techLevel>Neolithic</techLevel>
+		<factionIconPath>World/ArgoBase</factionIconPath>
+		<startingResearchTags>
+			<li>TribalStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>TribalStart</li>
+			<li>TribalStartTechprints</li>
+		</startingTechprintsResearchTags>
+		<recipePrerequisiteTags>
+			<li>Tribal</li>
+		</recipePrerequisiteTags>
+		<!-- Culture -->
+		<allowedCultures>
+			<li>Corunan</li>
+		</allowedCultures>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>ArgonianBackstory</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+		</disallowedMemes>
+	</FactionDef>
+
+	<FactionDef ParentName="ArgoFactionBase" Abstract="True" Name="ArgoPlayerAbstract">
+		<description>Your own community.</description>
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
+		<isPlayer>true</isPlayer>
+		<colorSpectrum>
+			<li>(0, 0.737, 0.847)</li>
+		</colorSpectrum>
+	</FactionDef>
+
+	<FactionDef ParentName="ArgoPlayerAbstract">
+		<defName>ArgoPlayerColony</defName>
+		<basicMemberKind>Argonian</basicMemberKind>
+	</FactionDef>
+
+	<FactionDef ParentName="ArgoFactionBase">
+		<defName>ArgoFaction</defName>
+		<description>A tribe of the strange and mysterious Saxhleel or, as outside races refer to them, Argonians.</description>
+		<leaderTitle>Hist speaker</leaderTitle>
+		<listOrderPriority>20</listOrderPriority>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>40</configurationListOrderPriority>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+		<colorSpectrum>
+			<li>(0.25, 0.35, 0.55)</li>
+			<li>(0.55, 0.45, 0.85)</li>
+		</colorSpectrum>
+		<raidCommonalityFromPointsCurve>
+			<points>
+				<li>(0, 1)</li>
+				<!--Constant 1 at all points levels-->
+			</points>
+		</raidCommonalityFromPointsCurve>
+		<visitorTraderKinds>
+			<li>Visitor_Neolithic_Standard</li>
+		</visitorTraderKinds>
+		<caravanTraderKinds>
+			<li>Caravan_Neolithic_BulkGoods</li>
+			<li>Caravan_Neolithic_Slaver</li>
+			<li>Caravan_Neolithic_WarMerchant</li>
+		</caravanTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Neolithic_Standard</li>
+		</baseTraderKinds>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(700, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Combat</kindDef>
+				<options>
+					<ArgoColonist>50</ArgoColonist>
+					<ArgoGuard>90</ArgoGuard>
+					<ArgoHistSpeaker>250</ArgoHistSpeaker>
+					<ArgoFighter>100</ArgoFighter>
+					<ArgoHunter>130</ArgoHunter>
+					<ArgoHistGuard>130</ArgoHistGuard>
+					<ArgoShadowscale>170</ArgoShadowscale>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<ArgoTrader>1</ArgoTrader>
+				</traders>
+				<carriers>
+					<Muffalo>2</Muffalo>
+					<Dromedary>2</Dromedary>
+				</carriers>
+				<guards>
+					<ArgoGuard>90</ArgoGuard>
+					<ArgoFighter>100</ArgoFighter>
+					<ArgoHunter>130</ArgoHunter>
+					<ArgoHistGuard>130</ArgoHistGuard>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<ArgoColonist>50</ArgoColonist>
+					<ArgoGuard>90</ArgoGuard>
+					<ArgoHistSpeaker>250</ArgoHistSpeaker>
+					<ArgoFighter>100</ArgoFighter>
+					<ArgoShadowscale>170</ArgoShadowscale>
+				</options>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<ArgoColonist>50</ArgoColonist>
+					<ArgoGuard>90</ArgoGuard>
+					<ArgoHistSpeaker>250</ArgoHistSpeaker>
+					<ArgoFighter>100</ArgoFighter>
+					<ArgoHunter>130</ArgoHunter>
+					<ArgoHistGuard>130</ArgoHistGuard>
+					<ArgoShadowscale>170</ArgoShadowscale>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+</Defs>

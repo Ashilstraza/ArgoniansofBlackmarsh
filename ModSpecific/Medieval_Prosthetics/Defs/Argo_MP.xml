@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Artificial Tail-->
+	<HediffDef ParentName="addedPartMedArtificial">
+		<defName>ArtificialArgoMedTail</defName>
+		<label>artificial tail</label>
+		<labelNoun>an artificial tail</labelNoun>
+		<description>An installed simple replacement tail.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ArtificialArgoMedTail</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>ArtificialArgoMedTail</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.75</partEfficiency>
+			<betterThanNatural>false</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+	<ThingDef ParentName="ArtificialMed">
+		<defName>ArtificialArgoMedTail</defName>
+		<label>artificial argonian tail</label>
+		<description>A simple replacement Argonian tail. It is a little better than a simple cloth tail.</description>
+		<costList>
+			<Steel>40</Steel>
+			<WoodLog>5</WoodLog>
+		</costList>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<statBases>
+			<Mass>1.25</Mass>
+		</statBases>
+	</ThingDef>
+	<RecipeDef ParentName="SurgeryArtificialArgoTail">
+		<defName>InstallArtificialArgoMedTail</defName>
+		<label>install artificial tail</label>
+		<description>Installs an artificial Argonian tail.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ArtificialArgoMedTail</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing artificial tail.</jobString>
+		<workAmount>350</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ArtificialArgoMedTail</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ArtificialArgoMedTail</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ArgonianTail</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>ArtificialArgoMedTail</addsHediff>
+	</RecipeDef>
+	<!-- Mechanical Tail-->
+	<HediffDef ParentName="addedPartMedMechanical">
+		<defName>MechanicalArgoMedTail</defName>
+		<label>mechanical tail</label>
+		<labelNoun>a mechanical tail</labelNoun>
+		<description>An installed mechanical tail.</description>
+		<descriptionHyperlinks>
+			<ThingDef>MechanicalArgoMedTail</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>MechanicalArgoMedTail</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.9</partEfficiency>
+			<betterThanNatural>false</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+	<ThingDef ParentName="MechanicalMed">
+		<defName>MechanicalArgoMedTail</defName>
+		<label>mechanical argonian tail</label>
+		<description>A mechanical Argonian tail. It is better than a simple artificial tail, but not as good as a real one.</description>
+		<costList>
+			<Steel>60</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<statBases>
+			<Mass>1.25</Mass>
+		</statBases>
+	</ThingDef>
+	<RecipeDef ParentName="SurgeryArtificialArgoTail">
+		<defName>InstallMechanicalArgoMedTail</defName>
+		<label>install mechanical argonian tail</label>
+		<description>Installs a mechanical argonian tail.</description>
+		<descriptionHyperlinks>
+			<ThingDef>MechanicalArgoMedTail</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing mechanical tail.</jobString>
+		<workAmount>350</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MechanicalArgoMedTail</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MechanicalArgoMedTail</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ArgonianTail</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>MechanicalArgoMedTail</addsHediff>
+	</RecipeDef>
+	<!-- Ambroisen Tail-->
+	<HediffDef ParentName="addedPartMedAmbroisen">
+		<defName>AmbroisenArgoMedTail</defName>
+		<label>ambroisen tail</label>
+		<labelNoun>an ambroisen tail</labelNoun>
+		<description>An installed ambroisen tail.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AmbroisenArgoMedTail</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AmbroisenArgoMedTail</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.0</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<NegotiationAbility>+0.03</NegotiationAbility>
+					<SocialImpact>+0.05</SocialImpact>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<ThingDef ParentName="AmbroisenMed">
+		<defName>AmbroisenArgoMedTail</defName>
+		<label>ambroisen argonian tail</label>
+		<description>An ambroisen tail. It looks and acts nearly identical to a real tail! There are beautiful illustrations all across the skin.</description>
+		<costList>
+			<Steel>60</Steel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<Gold>6</Gold>
+			<Silver>40</Silver>
+		</costList>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+		<statBases>
+			<Mass>1.25</Mass>
+		</statBases>
+	</ThingDef>
+	<RecipeDef ParentName="SurgeryArtificialArgoTail">
+		<defName>InstallAmbroisenArgoMedTail</defName>
+		<label>install ambroisen argonian tail</label>
+		<description>Installs an ambroisen argonian tail.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AmbroisenArgoMedTail</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing ambroisen tail.</jobString>
+		<workAmount>350</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AmbroisenArgoMedTail</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AmbroisenArgoMedTail</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ArgonianTail</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AmbroisenArgoMedTail</addsHediff>
+	</RecipeDef>
+</Defs>

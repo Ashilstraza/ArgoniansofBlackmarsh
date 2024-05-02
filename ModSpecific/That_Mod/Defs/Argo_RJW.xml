@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- RJW related patch notes placed here:
+1.5: Initial
+-->
+<Defs>
+	<rjw.RaceGroupDef>
+		<defName>ArgoRJWGroup</defName>
+		<raceNames>
+			<li>Alien_Argonian</li>
+		</raceNames>
+		<femaleBreasts>
+			<li>FeaturelessChest</li>
+		</femaleBreasts>
+		<femaleGenitals>
+			<li>CloacalVagina</li>
+		</femaleGenitals>
+		<maleBreasts>
+			<li>FeaturelessChest</li>
+		</maleBreasts>
+		<maleGenitals>
+			<li>CloacalPenis</li>
+		</maleGenitals>
+		<anuses>
+			<li>Anus</li>
+		</anuses>
+		<tags>
+			<li>Scales</li>
+		</tags>
+		<!-- TODO -->
+		<!--<oviPregnancy>true</oviPregnancy>-->
+	</rjw.RaceGroupDef>
+</Defs>

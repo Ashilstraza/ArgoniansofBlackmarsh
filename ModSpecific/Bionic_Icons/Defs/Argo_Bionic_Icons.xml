@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<BionicIconsIconDef MayRequire="automatic.bionicicons">
+		<defName>ArgonianTail</defName>
+		<bodyPart>ArgonianTail</bodyPart>
+		<texture>BionicIcons/BodyParts/Tail</texture>
+	</BionicIconsIconDef>
+</Defs>

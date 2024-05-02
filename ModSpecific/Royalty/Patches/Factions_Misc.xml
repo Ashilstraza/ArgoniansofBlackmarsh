@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- ========== Change tribal label ========== -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
+		<value>
+			<li>ArgoFaction</li>
+			<li>ArgoPlayerColony</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/QuestScriptDef[defName="Hospitality_Prisoners"]/root/nodes/li[storeAs="lodgersPawnKind"]/options</xpath>
+		<value>
+			<li>
+				<kindDef>Argo_QuestPrisoner</kindDef>
+				<weight>0.5</weight>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/QuestScriptDef[defName="Util_ChooseRandomQuestLodgerKind"]/root/nodes/li[name="asker"]/node/choices</xpath>
+		<value>
+			<li>
+				<factionDef>ArgoFaction</factionDef>
+				<pawnKinds>
+					<li>ArgoRefugee</li>
+					<li>ArgoColonist</li>
+					<li>ArgoGuard</li>
+					<li>Argo_QuestVisitor</li>
+				</pawnKinds>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/QuestScriptDef[defName="Util_ChooseRandomQuestLodgerKind"]/root/nodes/li[name="asker"]/elseNode/options</xpath>
+		<value>
+			<li>
+				<kindDef>Argo_QuestVisitor</kindDef>
+				<weight>0.5</weight>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/QuestScriptDef[defName="Util_ChooseRandomQuestHelperKind"]/root/nodes/li[storeAs="helperKind"]/choices</xpath>
+		<value>
+			<li>
+				<factionDef>ArgoFaction</factionDef>
+				<pawnKinds>
+					<li>ArgoFighter</li>
+					<li>ArgoGuard</li>
+					<li>ArgoHistGuard</li>
+					<li>ArgoShadowscale</li>
+				</pawnKinds>
+			</li>
+		</value>
+	</Operation>
+</Patch>

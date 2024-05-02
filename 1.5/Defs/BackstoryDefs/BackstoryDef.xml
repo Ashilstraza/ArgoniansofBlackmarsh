@@ -1,0 +1,632 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ============================ Childhood ============================ -->
+	<!-- +4 Numbers are relative and random in base rimworld ¯\_(ツ)_/¯ -->
+	<AlienRace.AlienBackstoryDef>
+		<defName>ArgonianScout</defName>
+		<title>Argonian scout</title>
+		<titleShort>scout</titleShort>
+		<baseDesc>[PAWN_nameDef] was a young scout and trained to be a hunter for [PAWN_possessive] tribe. [PAWN_pronoun] worked with the older hunters to learn the various game paths, watering holes, and how to treat the scrapes and bruises that happened along the way.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Animals>2</Animals>
+			<Medicine>1</Medicine>
+			<Shooting>1</Shooting>
+		</skillGains>
+		<spawnCategories>
+			<li>ArgonianBackstory</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>ArgonianBigKid</defName>
+		<title>Argonian wrestler</title>
+		<titleShort>wrestler</titleShort>
+		<baseDesc>[PAWN_nameDef] was strong from the time [PAWN_pronoun] was hatched, and could often be found wrestling and rough-housing with the other youth.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Melee>2</Melee>
+			<Animals>2</Animals>
+		</skillGains>
+		<spawnCategories>
+			<li>ArgonianBackstory</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>ArgonianMonk</defName>
+		<title>Argonian monk</title>
+		<titleShort>monk</titleShort>
+		<baseDesc>[PAWN_nameDef] was born in an ancient monastery devoted to martial arts. [PAWN_pronoun] was raised to master various forms of physical combat and extend [PAWN_possessive] physical limitations.</baseDesc>
+		<slot>Childhood</slot>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<spawnCategories>
+			<li>ArgonianBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Social>1</Social>
+			<Melee>2</Melee>
+			<Plants>1</Plants>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>ArgonianCurious</defName>
+		<title>Argonian hatchling</title>
+		<titleShort>curious</titleShort>
+		<baseDesc>[PAWN_nameDef] was always the curious one; often getting into things, making small trouble for the tenders at the hatching-pools, but never anything malicious. This curiosity never faded, and grew into a thirst for all knowledge.</baseDesc>
+		<slot>Childhood</slot>
+		<maleCommonality>90</maleCommonality>
+		<femaleCommonality>90</femaleCommonality>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<spawnCategories>
+			<li>ArgonianBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Social>1</Social>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>ArgonianDigKid</defName>
+		<title>Argonian litte digger</title>
+		<titleShort>digger</titleShort>
+		<baseDesc>[PAWN_nameDef] was constantly playing in the mud or sand, anywhere [PAWN_pronoun] could dig, burrow, and build. The others used to chuckle a bit, that [PAWN_pronoun] must be part Kwama.</baseDesc>
+		<slot>Childhood</slot>
+		<maleCommonality>50</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<spawnCategories>
+			<li>ArgonianBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Mining>3</Mining>
+			<Construction>1</Construction>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>Argonianminder</defName>
+		<title>Apprentice tree-minder</title>
+		<titleShort>minder</titleShort>
+		<baseDesc>[PAWN_nameDef] was raised from a hatchling to apprentice under the Tree-Minders, learning the more mundane toils and herbalist skills needed for their advanced alchemy. Those who are not chosen as Tree-Minders were still valued as skilled herbalists and healers.</baseDesc>
+		<slot>Childhood</slot>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<spawnCategories>
+			<li>ArgonianBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Plants>4</Plants>
+			<Social>2</Social>
+			<Medicine>2</Medicine>
+			<Shooting>-2</Shooting>
+			<Melee>-2</Melee>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>ArgonianAdopt</defName>
+		<title>Argonian adopted child</title>
+		<titleShort>adopted</titleShort>
+		<baseDesc>Rescued from a strange pod, [PAWN_nameDef] was taken in and raised by an old farmer and his wife. Even though [PAWN_pronoun] never got the hang of farming, [PAWN_possessive] great strength was a lifesaver for the elderly Kents...</baseDesc>
+		<slot>Childhood</slot>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>ArgonianBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Plants>-6</Plants>
+			<Animals>4</Animals>
+			<Construction>4</Construction>
+			<Crafting>2</Crafting>
+		</skillGains>
+		<workDisables>
+			<li>Firefighting</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>ArgonianTribekid</defName>
+		<title>Argonian tribe child</title>
+		<titleShort>argonian</titleShort>
+		<baseDesc>[PAWN_nameDef] was born in a small village. [PAWN_pronoun] had to learn to carry [PAWN_possessive] weight and keep the tribe fed from an early age.</baseDesc>
+		<slot>Childhood</slot>
+		<maleCommonality>60</maleCommonality>
+		<femaleCommonality>60</femaleCommonality>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<skillGains>
+			<Social>1</Social>
+			<Cooking>2</Cooking>
+			<Plants>1</Plants>
+		</skillGains>
+		<spawnCategories>
+			<li>ArgonianBackstory</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>ArgonianCoreKid</defName>
+		<title>Argonian crafter</title>
+		<titleShort>crafter</titleShort>
+		<baseDesc>[PAWN_nameDef] had always been making little things for [PAWN_possessive] family. Naturally, they encouraged [PAWN_possessive] skill with craftsmanship, and [PAWN_pronoun] had developed into quite the little artisan.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<skillGains>
+			<Artistic>3</Artistic>
+			<Crafting>1</Crafting>
+		</skillGains>
+		<spawnCategories>
+			<li>ArgonianBackstory</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>ArgonianShadowscaleKid</defName>
+		<title>Shadowscale child</title>
+		<titleShort>shadowscale</titleShort>
+		<baseDesc>[PAWN_nameDef] was raised to be a skilled assassin, delivering souls to [PAWN_possessive] maker, Sithis.</baseDesc>
+		<slot>Childhood</slot>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>ArgonianBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>2</Melee>
+			<Social>2</Social>
+			<Shooting>2</Shooting>
+			<Artistic>-2</Artistic>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ============================ Adulthood ============================ -->
+	<!-- +8 Numbers are relative and random in base rimworld ¯\_(ツ)_/¯ -->
+	<AlienRace.AlienBackstoryDef>
+		<defName>ArgonianTribal</defName>
+		<title>Argonian tribesman</title>
+		<titleShort>tribal</titleShort>
+		<baseDesc>[PAWN_nameDef] was a common villager within their tribe. Saxhleel are hardy people, due to the harsh environment they came from and had to be well versed in various skills.</baseDesc>
+		<slot>Adulthood</slot>
+		<maleCommonality>100</maleCommonality>
+		<femaleCommonality>100</femaleCommonality>
+		<spawnCategories>
+			<li>ArgonianBackstory</li>
+		</spawnCategories>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<requiredWorkTags>
+			<li>Commoner</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Construction>2</Construction>
+			<Crafting>2</Crafting>
+			<Plants>2</Plants>
+			<Animals>2</Animals>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>ArgonianMiner</defName>
+		<title>Argonian miner</title>
+		<titleShort>miner</titleShort>
+		<baseDesc>[PAWN_nameDef] loved rocks and digging. [PAWN_pronoun] feels right at home in a dank cave, so long as [PAWN_pronoun] has a pick and a light. However, an unnamed incident involving a Guar had left [PAWN_pronoun] a little more than reluctant to deal with animals of any kind.</baseDesc>
+		<slot>Adulthood</slot>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>30</femaleCommonality>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<spawnCategories>
+			<li>ArgonianBackstory</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Mining</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Mining>6</Mining>
+			<Plants>2</Plants>
+		</skillGains>
+		<workDisables>
+			<li>Animals</li>
+		</workDisables>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>ArgonianMaid</defName>
+		<title>Argonian maid</title>
+		<titleShort>lusty</titleShort>
+		<baseDesc>[PAWN_nameDef] is just a simple maid, sir, and has no idea what you imply.</baseDesc>
+		<slot>Adulthood</slot>
+		<maleCommonality>10</maleCommonality>
+		<femaleCommonality>30</femaleCommonality>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<spawnCategories>
+			<li>ArgonianBackstory</li>
+		</spawnCategories>
+		<skillGains>
+			<Cooking>4</Cooking>
+			<Plants>4</Plants>
+			<Animals>4</Animals>
+			<Mining>-4</Mining>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>ArgonianBuilder</defName>
+		<title>Argonian builder</title>
+		<titleShort>builder</titleShort>
+		<baseDesc>Facing the rough winter nights makes you appreciate a good hut. As such, a good builder like [PAWN_nameDef] is a valued member of any Saxhleel community.</baseDesc>
+		<slot>Adulthood</slot>
+		<maleCommonality>50</maleCommonality>
+		<femaleCommonality>50</femaleCommonality>
+		<spawnCategories>
+			<li>ArgonianBackstory</li>
+		</spawnCategories>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<requiredWorkTags>
+			<li>Constructing</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Crafting>2</Crafting>
+			<Construction>6</Construction>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>ArgonianWeapon</defName>
+		<title>Argonian weaponsmith</title>
+		<titleShort>weaponsmith</titleShort>
+		<baseDesc>[PAWN_nameDef] found [PAWN_pronoun] had a natural talent and love for making blades and weaponry. [PAWN_pronoun] made sure [PAWN_possessive] tribe had the finest weapons [PAWN_pronoun] can craft.</baseDesc>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<maleCommonality>40</maleCommonality>
+		<femaleCommonality>40</femaleCommonality>
+		<requiredWorkTags>
+			<li>Crafting</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Melee>1</Melee>
+			<Crafting>5</Crafting>
+		</skillGains>
+		<spawnCategories>
+			<li>ArgonianBackstory</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>ArgonianMedic</defName>
+		<title>Argonian healer</title>
+		<titleShort>healer</titleShort>
+		<baseDesc>[PAWN_nameDef] tended the injuries of the warriors and hunters of [PAWN_possessive] tribe that were wounded in combat. Additionally, [PAWN_pronoun] tended to the more mundane illnesses, fevers, and injuries among their tribe. [PAWN_pronoun] was very well respected for [PAWN_possessive] talents.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<requiredWorkTags>
+			<li>Caring</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Intellectual>2</Intellectual>
+			<Medicine>6</Medicine>
+		</skillGains>
+		<spawnCategories>
+			<li>ArgonianBackstory</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>ArgonianHunterBS</defName>
+		<title>Argonian hunter</title>
+		<titleShort>hunter</titleShort>
+		<baseDesc>[PAWN_nameDef] was a hunter and made sure [PAWN_possessive] tribe was well fed, learning the game paths and watering holes. [PAWN_pronoun] made sure to keep the number of predators down as well; for both [PAWN_possessive] own people, and the game they share.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Animals>3</Animals>
+			<Social>1</Social>
+			<Shooting>4</Shooting>
+		</skillGains>
+		<spawnCategories>
+			<li>ArgonianBackstory</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>GuarHerder</defName>
+		<title>Argonian Guar hearder</title>
+		<titleShort>hearder</titleShort>
+		<baseDesc>[PAWN_nameDef] raised Guar for many years in the old swamps. [PAWN_pronoun] had grown quite skilled at handing animals of most kinds.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<requiredWorkTags>
+			<li>Animals</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Animals>6</Animals>
+			<Crafting>1</Crafting>
+			<Medicine>1</Medicine>
+		</skillGains>
+		<spawnCategories>
+			<li>ArgonianBackstory</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>ArgoFarmer</defName>
+		<title>Argonian farmer</title>
+		<titleShort>farmer</titleShort>
+		<baseDesc>[PAWN_nameDef] tilled the various crops within [PAWN_possessive] community. [PAWN_pronoun] was well versed in the various flora around the surrounding lands.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<requiredWorkTags>
+			<li>PlantWork</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Plants>7</Plants>
+			<Medicine>1</Medicine>
+		</skillGains>
+		<spawnCategories>
+			<li>ArgonianBackstory</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>FighterArgonian</defName>
+		<title>Argonian fighter</title>
+		<titleShort>fighter</titleShort>
+		<baseDesc>[PAWN_nameDef] was a warrior for [PAWN_possessive] tribe. [PAWN_pronoun] kept dangerous creatures and people from attacking [PAWN_possessive] village. Sometimes [PAWN_pronoun] raided other tribes for supplies or, as some may suggest, even people.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>4</Melee>
+		</skillGains>
+		<spawnCategories>
+			<li>ArgonianBackstory</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>ArgonianCook</defName>
+		<title>Argonian cook</title>
+		<titleShort>cook</titleShort>
+		<baseDesc>[PAWN_nameDef] had the mixed blessing of being the best cook in [PAWN_possessive] large tribe. It meant everyone was grateful for fine meals, but [PAWN_pronoun] also often took the blame for any bad case of indigestion. Fortunately, [PAWN_nameDef] had cultivated a fine hand for preparing meals to avoid most any grief.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<requiredWorkTags>
+			<li>Cooking</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Cooking>7</Cooking>
+			<Plants>1</Plants>
+		</skillGains>
+		<spawnCategories>
+			<li>ArgonianBackstory</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>HerbArgonian</defName>
+		<title>Argonian alchemist</title>
+		<titleShort>alchemist</titleShort>
+		<baseDesc>[PAWN_nameDef] was known as the best healer and herbalist within leagues of [PAWN_possessive] tribe. [PAWN_pronoun] had learned all about the medical (and other) applications of every plant that can be used in the region, and many beyond, and knew how to properly prepare and apply them to either poultices or brews for maximum effect.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<requiredWorkTags>
+			<li>PlantWork</li>
+			<li>Caring</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Plants>4</Plants>
+			<Medicine>4</Medicine>
+		</skillGains>
+		<spawnCategories>
+			<li>ArgonianBackstory</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>FreedMiner</defName>
+		<title>Argonian rescued</title>
+		<titleShort>Rescued</titleShort>
+		<baseDesc>[PAWN_nameDef] was kidnapped and enslaved, working in a dark mine with little to eat - until a wandering hero (perhaps just looking to loot the cave for themself) freed [PAWN_pronoun] from [PAWN_possessive] bonds. After that, [PAWN_pronoun] had grown very fond of cooking lavish meals, and still retained a good skill with a pick.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<requiredWorkTags>
+			<li>Cooking</li>
+			<li>Mining</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Mining>3</Mining>
+			<Cooking>5</Cooking>
+		</skillGains>
+		<spawnCategories>
+			<li>ArgonianBackstory</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>CMDArgonian</defName>
+		<title>Argonian champion</title>
+		<titleShort>champion</titleShort>
+		<baseDesc>[PAWN_nameDef] was [PAWN_possessive] people's champion. [PAWN_pronoun] had become very skilled in combat after years of defending [PAWN_possessive] tribe from the innumerable threats that they face.</baseDesc>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Shooting>6</Shooting>
+			<Melee>6</Melee>
+			<Crafting>-4</Crafting>
+		</skillGains>
+		<spawnCategories>
+			<li>ArgonianBackstory</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>ArgonianSpacerAdult</defName>
+		<title>Argonian trader</title>
+		<titleShort>trader</titleShort>
+		<baseDesc>[PAWN_nameDef] was a free-trader, roving the lands searching for deals and opportunities for profit. Until now, [PAWN_pronoun] was heading a caravan; making deals with settlements like these... I wonder what happened?</baseDesc>
+		<slot>Adulthood</slot>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>ArgonianBackstory</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Social</li>
+		</requiredWorkTags>
+		<skillGains>
+			<Melee>2</Melee>
+			<Social>8</Social>
+			<Shooting>2</Shooting>
+			<Mining>-4</Mining>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>ArgonianShadowscale</defName>
+		<title>Shadowscale</title>
+		<titleShort>shadowscale</titleShort>
+		<baseDesc>[PAWN_nameDef] had spent years refining [PAWN_possessive] skills of infiltration and assassination. [PAWN_pronoun] is persuasive, stealthy, and ruthless. A deadly adversary.</baseDesc>
+		<slot>Adulthood</slot>
+		<maleCommonality>20</maleCommonality>
+		<femaleCommonality>20</femaleCommonality>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<spawnCategories>
+			<li>ArgonianBackstory</li>
+		</spawnCategories>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>ManualDumb</li>
+			<li>Caring</li>
+		</workDisables>
+		<forcedTraitsChance>
+			<li>
+				<options>
+					<li>
+						<defName>Psychopath</defName>
+					</li>
+					<li>
+						<defName Degree="1">Nerves</defName>
+					</li>
+					<li>
+						<defName Degree="2">Nerves</defName>
+					</li>
+				</options>
+				<count>1</count>
+				<chance>50</chance>
+			</li>
+		</forcedTraitsChance>
+		<skillGains>
+			<Melee>5</Melee>
+			<Social>5</Social>
+			<Shooting>5</Shooting>
+			<Crafting>5</Crafting>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+	<!-- ============================ Biotech ============================ -->
+	<AlienRace.AlienBackstoryDef>
+		<defName>ArgoNewborn</defName>
+		<title>Argonian newborn</title>
+		<titleShort>newborn</titleShort>
+		<baseDesc>[PAWN_nameDef] is a baby. [PAWN_possessive] life revolves around milk and naps.</baseDesc>
+		<slot>Childhood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<spawnCategories>
+			<li>ArgoHatchling</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>ArgoChild</defName>
+		<title>Argonian child</title>
+		<titleShort>child</titleShort>
+		<baseDesc>[PAWN_nameDef] is a child. The story of [PAWN_possessive] childhood is still being written.</baseDesc>
+		<slot>Childhood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<spawnCategories>
+			<li>ArgoChild</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>ArgoChildAdult</defName>
+		<title>Argonian child</title>
+		<titleShort>child</titleShort>
+		<baseDesc>[PAWN_nameDef] grew up in our tribe.</baseDesc>
+		<slot>Childhood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<spawnCategories>
+			<li>ArgoTribalAdult</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>ArgoVatChild</defName>
+		<title>Argonian vatgrown child</title>
+		<titleShort>child</titleShort>
+		<baseDesc>[PAWN_nameDef] spent most of [PAWN_possessive] childhood in a growth vat.</baseDesc>
+		<slot>Childhood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<spawnCategories>
+			<li>ArgoVatChild</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+	<AlienRace.AlienBackstoryDef>
+		<defName>ArgoTribeChild</defName>
+		<title>Argonian tribe member</title>
+		<titleShort>tribal</titleShort>
+		<baseDesc>[PAWN_nameDef] became an adult in our tribe. [PAWN_possessive] story is still being written.</baseDesc>
+		<slot>Adulthood</slot>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<spawnCategories>
+			<li>ArgoTribalAdult</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+</Defs>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- These patches are for replacing various things that could not be done in the regular xml files. -->
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Expanded Prosthetics and Organ Engineering</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- Achutich Tail -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/HediffDef[defName="ArchotechArgoTail"]</xpath>
+					<value>
+						<defaultLabelColor>(225,237,114)</defaultLabelColor>
+					</value>
+				</li>
+				<!-- Advanced Bionic Tail -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="AdvancedBionicArgoTail"]</xpath>
+					<value>
+						<thingCategories Inherit="False">
+							<li>BodyPartsUltra</li>
+						</thingCategories>
+						<graphicData>
+							<texPath>Things/Item/BodyPart/AdvancedPart</texPath>
+						</graphicData>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="AdvancedBionicArgoTail"]/costList</xpath>
+					<value>
+						<costList>
+							<BionicArgoTail>1</BionicArgoTail>
+							<ComponentSpacer>5</ComponentSpacer>
+						</costList>
+					</value>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="AdvancedBionicArgoTail"]/statBases/MarketValue</xpath>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="AdvancedBionicArgoTail"]/statBases/WorkToMake</xpath>
+					<value>
+						<WorkToMake>10000</WorkToMake>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="AdvancedBionicArgoTail"]/statBases/DeteriorationRate</xpath>
+					<value>
+						<DeteriorationRate>0.0</DeteriorationRate>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="AdvancedBionicArgoTail"]/recipeMaker/recipeUsers</xpath>
+					<value>
+						<li>TableProsthetics</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="AdvancedBionicArgoTail"]/recipeMaker</xpath>
+					<value>
+						<researchPrerequisite>AdvancedBionics</researchPrerequisite>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="AdvancedBionicArgoTail"]/defaultLabelColor</xpath>
+					<value>
+						<defaultLabelColor>(18,215,57)</defaultLabelColor>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/HediffDef[defName="AdvancedBionicArgoTail"]/addedPartProps/partEfficiency</xpath>
+					<value>
+						<partEfficiency>1.35</partEfficiency>
+					</value>
+				</li>
+				<!-- Bionic Tail -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="BionicArgoTail"]/costList</xpath>
+					<value>
+						<costList>
+							<ProstheticArgoTail>1</ProstheticArgoTail>
+							<Plasteel>45</Plasteel>
+							<ComponentIndustrial>5</ComponentIndustrial>
+						</costList>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="BionicArgoTail"]/statBases</xpath>
+					<value>
+						<WorkToMake>7500</WorkToMake>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="BionicArgoTail"]/statBases</xpath>
+					<value>
+						<DeteriorationRate>0.0</DeteriorationRate>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="BionicArgoTail"]</xpath>
+					<value>
+						<graphicData>
+							<texPath>Things/Item/BodyPart/BionicPart</texPath>
+						</graphicData>
+					</value>
+				</li>
+				<!-- Prosthetic Tail -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/HediffDef[defName="ProstheticArgoTail"]</xpath>
+					<value>
+						<defaultLabelColor>(102,178,255)</defaultLabelColor>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="ProstheticArgoTail"]/costList</xpath>
+					<value>
+						<costList>
+							<Steel>55</Steel>
+							<Plasteel>25</Plasteel>
+							<ComponentIndustrial>3</ComponentIndustrial>
+						</costList>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="ProstheticArgoTail"]/statBases</xpath>
+					<value>
+						<WorkToMake>5000</WorkToMake>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="ProstheticArgoTail"]/statBases</xpath>
+					<value>
+						<DeteriorationRate>0.0</DeteriorationRate>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="ProstheticArgoTail"]</xpath>
+					<value>
+						<graphicData>
+							<texPath>Things/Item/BodyPart/SimplePart</texPath>
+						</graphicData>
+					</value>
+				</li>
+				<!-- Cloth Tail -->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/HediffDef[defName="ClothArgoTail"]</xpath>
+					<value>
+						<defaultLabelColor>(148,117,14)</defaultLabelColor>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="ClothArgoTail"]/statBases</xpath>
+					<value>
+						<DeteriorationRate>0.0</DeteriorationRate>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="ClothArgoTail"]</xpath>
+					<value>
+						<graphicData>
+							<texPath>Things/Item/BodyPart/BasicProsthesis</texPath>
+						</graphicData>
+					</value>
+				</li>
+				<!-- Flesh Tail -->
+			</operations>
+		</match>
+	</Operation>
+</Patch>

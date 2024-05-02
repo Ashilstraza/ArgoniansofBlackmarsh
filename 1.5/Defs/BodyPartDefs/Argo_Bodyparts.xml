@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<BodyPartDef>
+		<defName>ArgonianTail</defName>
+		<label>tail</label>
+		<hitPoints>35</hitPoints>
+		<frostbiteVulnerability>8</frostbiteVulnerability>
+		<spawnThingOnRemoved>ArgonianTail</spawnThingOnRemoved>
+		<skinCovered>true</skinCovered>
+		<beautyRelated>true</beautyRelated>
+	</BodyPartDef>
+	<ThingDef ParentName="BodyPartNaturalBase">
+		<defName>ArgonianTail</defName>
+		<label>argonian tail</label>
+		<description>An Argonian's tail.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallArgoTail</RecipeDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MarketValue>200</MarketValue>
+			<Mass>0.75</Mass>
+		</statBases>
+	</ThingDef>
+</Defs>
