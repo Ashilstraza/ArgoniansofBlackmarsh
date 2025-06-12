@@ -1,37 +1,90 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <HediffDef ParentName="AddedBodyPartBase">
-    <defName>BionicArgoTail</defName>
-    <label>bionic argonian tail</label>
-    <spawnThingOnRemoved>BionicArgoTail</spawnThingOnRemoved>
-    <description>a biomechanical argonian tail used for balance.</description>
-    <addedPartProps>
-      <betterThanNatural>true</betterThanNatural>
-      <solid>true</solid>
-      <partEfficiency>1.2</partEfficiency>
-    </addedPartProps>
-    <stages>
-      <li>
-        <capMods>
-          <li>
-            <capacity>Manipulation</capacity>
-            <offset>0.2</offset>
-          </li>
-          <li>
-            <capacity>Moving</capacity>
-            <offset>0.2</offset>
-          </li>
-        </capMods>
-      </li>
-    </stages>
-  </HediffDef>
-  <HediffDef ParentName="AddedBodyPartBase">
-    <defName>ClothTail</defName>
-    <description>a crappy cloth tail. Better than nothing, I guess.</description>
-    <label>cloth tail</label>
-    <addedPartProps>
-      <solid>true</solid>
-      <partEfficiency>0.6</partEfficiency>
-    </addedPartProps>
-  </HediffDef>
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>ArchotechArgoTail</defName>
+		<label>archotech tail</label>
+		<labelNoun>an archotech tail</labelNoun>
+		<description>An archotech argonian tail. Better than anything that can be created.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ArchotechArgoTail</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>ArchotechArgoTail</spawnThingOnRemoved>
+		<addedPartProps>
+			<betterThanNatural>true</betterThanNatural>
+			<solid>true</solid>
+			<partEfficiency>1.3</partEfficiency>
+		</addedPartProps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.3</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.3</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>BionicArgoTail</defName>
+		<label>bionic tail</label>
+		<labelNoun>a bionic tail</labelNoun>
+		<description>A biomechanical argonian tail used for balance and manipulation.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BionicArgoTail</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>BionicArgoTail</spawnThingOnRemoved>
+		<addedPartProps>
+			<betterThanNatural>true</betterThanNatural>
+			<solid>true</solid>
+			<partEfficiency>1.2</partEfficiency>
+		</addedPartProps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.1</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>ProstheticArgoTail</defName>
+		<label>prosthetic tail</label>
+		<labelNoun>a prosthetic argo tail</labelNoun>
+		<description>A clunky argonian tail. Not as nice as a real one.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ProstheticArgoTail</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>ProstheticArgoTail</spawnThingOnRemoved>
+		<addedPartProps>
+			<betterThanNatural>false</betterThanNatural>
+			<solid>true</solid>
+			<partEfficiency>0.85</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>ClothTail</defName>
+		<label>cloth tail</label>
+		<labelNoun>a cloth tail</labelNoun>
+		<description>A crappy cloth tail. Better than nothing, I guess.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ClothTail</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.6</partEfficiency>
+			<betterThanNatural>false</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
 </Defs>

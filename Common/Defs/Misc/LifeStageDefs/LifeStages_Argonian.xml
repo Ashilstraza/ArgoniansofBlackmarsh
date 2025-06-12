@@ -32,7 +32,7 @@
 		<!-- Babies fall asleep randomly when they're tired. -->
 		<canSleepWhenStarving>false</canSleepWhenStarving>
 		<canInitiateSocialInteraction>false</canInitiateSocialInteraction>
-		<customMoodTipString>Mood represents how happy or stressed someone is. Babies with low mood are more likely to cry, while babies with a high mood are more likely to giggle.</customMoodTipString>
+		<customMoodTipString>Mood represents how happy or stressed someone is. Hatchlings with low mood are more likely to cry, while hatchlings with a high mood are more likely to giggle.</customMoodTipString>
 		<statFactors>
 			<MoveSpeed>0.2</MoveSpeed>
 		</statFactors>
@@ -88,7 +88,6 @@
 			<MoveSpeed>0.65</MoveSpeed>
 		</statFactors>
 	</LifeStageDef>
-	
 	<LifeStageDef ParentName="LifeStageHumanlikeArgoChild">
 		<defName>PreTeenArgoStage</defName>
 		<label>preteenage stage</label>

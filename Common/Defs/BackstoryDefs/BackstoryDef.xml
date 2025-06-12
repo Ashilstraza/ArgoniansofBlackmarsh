@@ -168,8 +168,9 @@
 		<maleCommonality>20</maleCommonality>
 		<femaleCommonality>20</femaleCommonality>
 		<skillGains>
-			<Artistic>3</Artistic>
-			<Crafting>1</Crafting>
+			<Social>1</Social>
+			<Artistic>1</Artistic>
+			<Crafting>2</Crafting>
 		</skillGains>
 		<spawnCategories>
 			<li>ArgonianBackstory</li>
@@ -573,7 +574,7 @@
 		<defName>ArgoNewborn</defName>
 		<title>Argonian newborn</title>
 		<titleShort>newborn</titleShort>
-		<baseDesc>[PAWN_nameDef] is a baby. [PAWN_possessive] life revolves around milk and naps.</baseDesc>
+		<baseDesc>[PAWN_nameDef] is a hatchling. [PAWN_possessive] life revolves around hist sap and naps.</baseDesc>
 		<slot>Childhood</slot>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<bodyTypeMale>Male</bodyTypeMale>

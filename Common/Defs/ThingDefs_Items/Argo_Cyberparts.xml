@@ -56,7 +56,8 @@
 	</ThingDef>
 	<ThingDef ParentName="BodyPartProstheticBase">
 		<defName>ClothArgoTail</defName>
-		<label>argonian tail</label><!-- The material used to make it gives a unique name at the begining (For example, 'Bison wool argonian tail')-->
+		<label>argonian cloth tail</label>
+		<!-- The material used to make it gives a unique name at the begining (For example, 'Bison wool argonian tail')-->
 		<description>Simple cloth tail made to replace a missing tail. It's better than nothing.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallClothArgoTail</RecipeDef>

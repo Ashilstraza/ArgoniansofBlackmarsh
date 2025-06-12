@@ -1,45 +1,99 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-  <ThingDef ParentName="BodyPartBionicBase">
-    <defName>BionicArgoTail</defName>
-    <label>bionic argonian tail</label>
-    <description>A technical marvel! intricate gyroscopic feedback systems allow increased movement and dexterity! Praise the Hist!</description>
-    <graphicData>
-      <texPath>Things/Item/Health/HealthItem</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <color>(155,165,148)</color>
-    </graphicData>
-    <costList>
-      <Plasteel>10</Plasteel>
-      <ComponentSpacer>4</ComponentSpacer>
-    </costList>
-    <statBases>
-      <MarketValue>1500</MarketValue>
-      <WorkToMake>38000</WorkToMake>
-      <Mass>0.3</Mass>
-    </statBases>
-    <techHediffsTags>
-      <li>Advanced</li>
-    </techHediffsTags>
-  </ThingDef>
-  <ThingDef ParentName="BodyPartProstheticBase">
-    <defName>ClothTail</defName>
-    <label>cloth tail</label>
-    <description>Simple prosthesis made to replace a missing tail. It's better than nothing...</description>
-    <graphicData>
-      <texPath>Things/Item/Health/HealthItem</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <color>(155,165,148)</color>
-    </graphicData>
-    <statBases>
-      <MarketValue>400</MarketValue>
-      <Mass>.3</Mass>
-    </statBases>
-    <costList>
-      <Cloth>10</Cloth>
-    </costList>
-    <techHediffsTags>
-      <li>Simple</li>
-    </techHediffsTags>
-  </ThingDef>
+	<ThingDef ParentName="BodyPartArchotechBase">
+		<defName>ArchotechArgoTail</defName>
+		<label>archotech argonian tail</label>
+		<description>A tail from some far off world. It enhances one's movement and dexterity. Additionally, it heals any damage it may take. Far beyond what any crafter could create.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallArchotechArgoTail</RecipeDef>
+		</descriptionHyperlinks>
+		<tradeTags>
+			<li>GlitterworldParts</li>
+		</tradeTags>
+		<statBases>
+			<MarketValue>2800</MarketValue>
+			<Mass>0.6</Mass>
+		</statBases>
+	</ThingDef>
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>BionicArgoTail</defName>
+		<label>bionic argonian tail</label>
+		<description>A technical marvel! Intricate gyroscopic feedback systems allow increased movement and dexterity! Praise the Hist!</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallBionicArgoTail</RecipeDef>
+		</descriptionHyperlinks>
+		<tradeTags>
+			<li>BionicProstheses</li>
+		</tradeTags>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>0.75</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	<ThingDef ParentName="BodyPartProstheticMakeableBase">
+		<defName>ProstheticArgoTail</defName>
+		<label>prosthetic argonian tail</label>
+		<description>A finely crafted mechanical tail created to replace a missing tail. Not quite as good as a natural one.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallProstheticArgoTail</RecipeDef>
+		</descriptionHyperlinks>
+		<tradeTags>
+			<li>SimpleProstheses</li>
+		</tradeTags>
+		<costList>
+			<Steel>30</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+	</ThingDef>
+	<ThingDef ParentName="BodyPartProstheticBase">
+		<defName>ClothTail</defName><!-- Changed to ClothArgoTail in 1.5 -->
+		<label>argonian cloth tail</label>
+		<!-- The material used to make it gives a unique name at the begining (For example, 'Bison wool argonian tail')-->
+		<description>Simple cloth tail made to replace a missing tail. It's better than nothing.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallClothArgoTail</RecipeDef>
+		</descriptionHyperlinks>
+		<tradeTags>
+			<li>BasicProstheses</li>
+		</tradeTags>
+		<thingCategories>
+			<li>BodyPartsSimple</li>
+		</thingCategories>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<recipeUsers>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedHealthItemProsthetic</unfinishedThingDef>
+		</recipeMaker>
+		<statBases>
+			<Mass>0.5</Mass>
+			<WorkToMake>3000</WorkToMake>
+		</statBases>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
 </Defs>

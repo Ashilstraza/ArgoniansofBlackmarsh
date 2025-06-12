@@ -149,8 +149,10 @@
 										<li>Eyes</li>
 									</groups>
 									<woundAnchorTag>LeftEye</woundAnchorTag>
-									<flipGraphic IgnoreIfNoMatchingField="True">true</flipGraphic><!-- 1.5 -->
-									<visibleHediffRots IgnoreIfNoMatchingField="True"><!-- 1.5 -->
+									<flipGraphic IgnoreIfNoMatchingField="True">true</flipGraphic>
+									<!-- 1.5 -->
+									<visibleHediffRots IgnoreIfNoMatchingField="True">
+										<!-- 1.5 -->
 										<li>South</li>
 										<li>West</li>
 									</visibleHediffRots>
@@ -164,7 +166,8 @@
 										<li>Eyes</li>
 									</groups>
 									<woundAnchorTag>RightEye</woundAnchorTag>
-									<visibleHediffRots IgnoreIfNoMatchingField="True"><!-- 1.5 -->
+									<visibleHediffRots IgnoreIfNoMatchingField="True">
+										<!-- 1.5 -->
 										<li>South</li>
 										<li>East</li>
 									</visibleHediffRots>
@@ -173,7 +176,8 @@
 									<def>Ear</def>
 									<customLabel>left ear</customLabel>
 									<coverage>0.07</coverage>
-									<flipGraphic IgnoreIfNoMatchingField="True">true</flipGraphic><!-- 1.5 -->
+									<flipGraphic IgnoreIfNoMatchingField="True">true</flipGraphic>
+									<!-- 1.5 -->
 									<groups>
 										<li>UpperHead</li>
 										<li>FullHead</li>
@@ -225,7 +229,8 @@
 						<li>Shoulders</li>
 					</groups>
 					<woundAnchorTag>LeftShoulder</woundAnchorTag>
-					<flipGraphic IgnoreIfNoMatchingField="True">true</flipGraphic><!-- 1.5 -->
+					<flipGraphic IgnoreIfNoMatchingField="True">true</flipGraphic>
+					<!-- 1.5 -->
 					<parts>
 						<li>
 							<def>Clavicle</def>
@@ -233,7 +238,8 @@
 							<coverage>0.09</coverage>
 							<height>Top</height>
 							<depth>Inside</depth>
-							<flipGraphic IgnoreIfNoMatchingField="True">true</flipGraphic><!-- 1.5 -->
+							<flipGraphic IgnoreIfNoMatchingField="True">true</flipGraphic>
+							<!-- 1.5 -->
 							<groups>
 								<li>Torso</li>
 							</groups>
@@ -242,7 +248,8 @@
 							<def>Arm</def>
 							<customLabel>left arm</customLabel>
 							<coverage>0.77</coverage>
-							<flipGraphic IgnoreIfNoMatchingField="True">true</flipGraphic><!-- 1.5 -->
+							<flipGraphic IgnoreIfNoMatchingField="True">true</flipGraphic>
+							<!-- 1.5 -->
 							<groups>
 								<li>Arms</li>
 							</groups>
@@ -270,7 +277,8 @@
 									<customLabel>left hand</customLabel>
 									<coverage>0.14</coverage>
 									<height>Bottom</height>
-									<flipGraphic IgnoreIfNoMatchingField="True">true</flipGraphic><!-- 1.5 -->
+									<flipGraphic IgnoreIfNoMatchingField="True">true</flipGraphic>
+									<!-- 1.5 -->
 									<groups>
 										<li>Hands</li>
 									</groups>
@@ -456,7 +464,8 @@
 						<li>Legs</li>
 					</groups>
 					<woundAnchorTag>LeftLeg</woundAnchorTag>
-					<flipGraphic IgnoreIfNoMatchingField="True">true</flipGraphic><!-- 1.5 -->
+					<flipGraphic IgnoreIfNoMatchingField="True">true</flipGraphic>
+					<!-- 1.5 -->
 					<parts>
 						<li>
 							<def>Femur</def>
@@ -483,7 +492,8 @@
 							<groups>
 								<li>Feet</li>
 							</groups>
-							<flipGraphic IgnoreIfNoMatchingField="True">true</flipGraphic><!-- 1.5 -->
+							<flipGraphic IgnoreIfNoMatchingField="True">true</flipGraphic>
+							<!-- 1.5 -->
 							<parts>
 								<li>
 									<def>Toe</def>

@@ -1,121 +1,168 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-  <RecipeDef Name="SurgeryArgoTails" ParentName="SurgeryFlesh" Abstract="True">
-    <recipeUsers>
-      <li>Alien_Argonian</li>
-    </recipeUsers>
-  </RecipeDef>
-  <RecipeDef ParentName="SurgeryArgoTails">
-    <defName>InstallargoTail</defName>
-    <label>install argonian tail</label>
-    <description>Replace missing or damaged tail.</description>
-    <workerClass>Recipe_InstallNaturalBodyPart</workerClass>
-    <jobString>Installing tail.</jobString>
-    <workAmount>1200</workAmount>
-    <ingredients>
-      <li>
-        <filter>
-          <categories>
-            <li>Medicine</li>
-          </categories>
-        </filter>
-        <count>1</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Tail</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <categories>
-        <li>Medicine</li>
-      </categories>
-      <thingDefs>
-        <li>Tail</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <appliedOnFixedBodyParts>
-      <li>Tail</li>
-    </appliedOnFixedBodyParts>
-  </RecipeDef>
-  <RecipeDef ParentName="SurgeryArgoTails">
-    <defName>InstallClothTail</defName>
-    <label>install cloth tail</label>
-    <description>Installs cloth tail.</description>
-    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-    <jobString>Installing cloth tail.</jobString>
-    <workAmount>1200</workAmount>
-    <ingredients>
-      <li>
-        <filter>
-          <categories>
-            <li>Medicine</li>
-          </categories>
-        </filter>
-        <count>1</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Cloth</li>
-          </thingDefs>
-        </filter>
-        <count>3</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <categories>
-        <li>Medicine</li>
-      </categories>
-      <thingDefs>
-        <li>Cloth</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <appliedOnFixedBodyParts>
-      <li>Tail</li>
-    </appliedOnFixedBodyParts>
-    <addsHediff>ClothTail</addsHediff>
-  </RecipeDef>
-  <RecipeDef ParentName="SurgeryArgoTails">
-    <defName>InstallBionicArgoTail</defName>
-    <label>install bionic tail</label>
-    <description>Installs bionic tail.</description>
-    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-    <jobString>Installing bionic tail.</jobString>
-    <workAmount>1200</workAmount>
-    <ingredients>
-      <li>
-        <filter>
-          <categories>
-            <li>Medicine</li>
-          </categories>
-        </filter>
-        <count>1</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>BionicArgoTail</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <categories>
-        <li>Medicine</li>
-      </categories>
-      <thingDefs>
-        <li>BionicArgoTail</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <appliedOnFixedBodyParts>
-      <li>Tail</li>
-    </appliedOnFixedBodyParts>
-    <addsHediff>BionicArgoTail</addsHediff>
-  </RecipeDef>
+	<RecipeDef Name="SurgeryNaturalArgoTail" ParentName="SurgeryInstallBodyPartNaturalBase" Abstract="True">
+		<recipeUsers>
+			<li>Alien_Argonian</li>
+		</recipeUsers>
+	</RecipeDef>
+	<RecipeDef Name="SurgeryArtificialArgoTail" ParentName="SurgeryInstallBodyPartArtificialBase" Abstract="True">
+		<recipeUsers>
+			<li>Alien_Argonian</li>
+		</recipeUsers>
+	</RecipeDef>
+	<RecipeDef ParentName="SurgeryNaturalArgoTail">
+		<defName>InstallArgoTail</defName>
+		<label>install argonian tail</label>
+		<description>Replace missing or damaged tail.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Tail</ThingDef><!-- Renamed in 1.5 -->
+		</descriptionHyperlinks>
+		<jobString>Installing tail.</jobString>
+		<workAmount>1200</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Tail</li><!-- Renamed in 1.5 -->
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Tail</li><!-- Renamed in 1.5 -->
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Tail</li><!-- Renamed in 1.5 -->
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	<RecipeDef ParentName="SurgeryArtificialArgoTail">
+		<defName>InstallClothArgoTail</defName>
+		<label>install cloth tail</label>
+		<description>Installs a cloth tail.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ClothTail</ThingDef><!-- Changed to ClothArgoTail in 1.5 -->
+		</descriptionHyperlinks>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing cloth tail.</jobString>
+		<workAmount>1200</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ClothTail</li><!-- Changed to ClothArgoTail in 1.5 -->
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ClothTail</li><!-- Changed to ClothArgoTail in 1.5 -->
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Tail</li><!-- Renamed in 1.5 -->
+		</appliedOnFixedBodyParts>
+		<addsHediff>ClothTail</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="SurgeryArtificialArgoTail">
+		<defName>InstallBionicArgoTail</defName>
+		<label>install bionic tail</label>
+		<description>Installs a bionic argonian tail.</description>
+		<descriptionHyperlinks>
+			<ThingDef>BionicArgoTail</ThingDef>
+		</descriptionHyperlinks>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic tail.</jobString>
+		<workAmount>1200</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BionicArgoTail</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BionicArgoTail</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Tail</li><!-- Renamed in 1.5 -->
+		</appliedOnFixedBodyParts>
+		<addsHediff>BionicArgoTail</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="SurgeryArtificialArgoTail">
+		<defName>InstallProstheticArgoTail</defName>
+		<label>install prosthetic tail</label>
+		<description>Installs a prosthetic argonian tail.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ProstheticArgoTail</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing prosthetic tail.</jobString>
+		<skillRequirements>
+			<Medicine>4</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ProstheticArgoTail</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ProstheticArgoTail</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Tail</li><!-- Renamed in 1.5 -->
+		</appliedOnFixedBodyParts>
+		<addsHediff>ProstheticArgoTail</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="SurgeryArtificialArgoTail">
+		<defName>InstallArchotechArgoTail</defName>
+		<label>install archotech tail</label>
+		<description>Installs an archotech argonian tail.</description>
+		<descriptionHyperlinks>
+			<ThingDef>ArchotechArgoTail</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing archotech tail.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ArchotechArgoTail</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ArchotechArgoTail</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Tail</li><!-- Renamed in 1.5 -->
+		</appliedOnFixedBodyParts>
+		<addsHediff>ArchotechArgoTail</addsHediff>
+	</RecipeDef>
 </Defs>
