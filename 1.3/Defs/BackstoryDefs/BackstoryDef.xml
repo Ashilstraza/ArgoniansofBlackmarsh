@@ -404,7 +404,7 @@
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<bodyTypeMale>Hulk</bodyTypeMale>
 		<requiredWorkTags>
-			<li>Constructing</li>
+			<li>ManualSkilled</li>
 		</requiredWorkTags>
 		<skillGains>
 			<li>
