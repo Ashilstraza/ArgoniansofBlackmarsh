@@ -66,7 +66,7 @@
 	<ThingDef ParentName="BodyPartBionicBase">
 		<defName>AdvancedBionicArgoTail</defName>
 		<label>advanced bionic argonian tail</label>
-		<description>A fancier argonian tail. Looks and feels like a real one but is far better than any 'bold could dream. Super smart argonian made this from a fancy argonian tail and extra fancy pieces.</description>
+		<description>A superbly crafted argonian tail. Looks and feels like a real one but is far better than anyone could dream of. An artisan crafted this from an otherwise lesser tail using the finest materials.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>InstallAdvancedBionicArgoTail</RecipeDef>
 		</descriptionHyperlinks>
