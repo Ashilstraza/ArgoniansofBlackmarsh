@@ -9,8 +9,8 @@
 		<baseDescription>[PAWN_nameDef] was a young scout and trained to be a hunter for [PAWN_possessive] tribe. [PAWN_pronoun] worked with the older hunters to learn the various game paths, watering holes, and how to treat the scrapes and bruises that happened along the way.</baseDescription>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
-		<maleCommonality>20</maleCommonality>
-		<femaleCommonality>20</femaleCommonality>
+		<maleCommonality>35</maleCommonality>
+		<femaleCommonality>35</femaleCommonality>
 		<slot>Childhood</slot>
 		<skillGains>
 			<li>
@@ -37,8 +37,8 @@
 		<baseDescription>[PAWN_nameDef] was strong from the time [PAWN_pronoun] was hatched, and could often be found wrestling and rough-housing with the other youth.</baseDescription>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
-		<maleCommonality>20</maleCommonality>
-		<femaleCommonality>20</femaleCommonality>
+		<maleCommonality>35</maleCommonality>
+		<femaleCommonality>35</femaleCommonality>
 		<slot>Childhood</slot>
 		<skillGains>
 			<li>
@@ -113,7 +113,7 @@
 		<baseDescription>[PAWN_nameDef] was constantly playing in the mud or sand, anywhere [PAWN_pronoun] could dig, burrow, and build. The others used to chuckle a bit, that [PAWN_pronoun] must be part Kwama.</baseDescription>
 		<slot>Childhood</slot>
 		<maleCommonality>50</maleCommonality>
-		<femaleCommonality>20</femaleCommonality>
+		<femaleCommonality>35</femaleCommonality>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<spawnCategories>
@@ -136,8 +136,8 @@
 		<titleShort>minder</titleShort>
 		<baseDescription>[PAWN_nameDef] was raised from a hatchling to apprentice under the Tree-Minders, learning the more mundane toils and herbalist skills needed for their advanced alchemy. Those who are not chosen as Tree-Minders were still valued as skilled herbalists and healers.</baseDescription>
 		<slot>Childhood</slot>
-		<maleCommonality>20</maleCommonality>
-		<femaleCommonality>20</femaleCommonality>
+		<maleCommonality>15</maleCommonality>
+		<femaleCommonality>15</femaleCommonality>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<spawnCategories>
@@ -172,8 +172,8 @@
 		<titleShort>adopted</titleShort>
 		<baseDescription>Rescued from a strange pod, [PAWN_nameDef] was taken in and raised by an old farmer and his wife. Even though [PAWN_pronoun] never got the hang of farming, [PAWN_possessive] great strength was a lifesaver for the elderly Kents...</baseDescription>
 		<slot>Childhood</slot>
-		<maleCommonality>20</maleCommonality>
-		<femaleCommonality>20</femaleCommonality>
+		<maleCommonality>10</maleCommonality>
+		<femaleCommonality>5</femaleCommonality>
 		<bodyTypeMale>Hulk</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
@@ -207,8 +207,8 @@
 		<titleShort>argonian</titleShort>
 		<baseDescription>[PAWN_nameDef] was born in a small village. [PAWN_pronoun] had to learn to carry [PAWN_possessive] weight and keep the tribe fed from an early age.</baseDescription>
 		<slot>Childhood</slot>
-		<maleCommonality>60</maleCommonality>
-		<femaleCommonality>60</femaleCommonality>
+		<maleCommonality>100</maleCommonality>
+		<femaleCommonality>100</femaleCommonality>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<skillGains>
@@ -237,8 +237,8 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<slot>Childhood</slot>
-		<maleCommonality>20</maleCommonality>
-		<femaleCommonality>20</femaleCommonality>
+		<maleCommonality>50</maleCommonality>
+		<femaleCommonality>50</femaleCommonality>
 		<skillGains>
 			<li>
 				<defName>Social</defName>
@@ -263,8 +263,8 @@
 		<titleShort>shadowscale</titleShort>
 		<baseDescription>[PAWN_nameDef] was raised to be a skilled assassin, delivering souls to [PAWN_possessive] maker, Sithis.</baseDescription>
 		<slot>Childhood</slot>
-		<maleCommonality>20</maleCommonality>
-		<femaleCommonality>20</femaleCommonality>
+		<maleCommonality>15</maleCommonality>
+		<femaleCommonality>15</femaleCommonality>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
@@ -333,8 +333,8 @@
 		<titleShort>miner</titleShort>
 		<baseDescription>[PAWN_nameDef] loved rocks and digging. [PAWN_pronoun] feels right at home in a dank cave, so long as [PAWN_pronoun] has a pick and a light. However, an unnamed incident involving a Guar had left [PAWN_pronoun] a little more than reluctant to deal with animals of any kind.</baseDescription>
 		<slot>Adulthood</slot>
-		<maleCommonality>20</maleCommonality>
-		<femaleCommonality>30</femaleCommonality>
+		<maleCommonality>50</maleCommonality>
+		<femaleCommonality>35</femaleCommonality>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<spawnCategories>
@@ -363,8 +363,8 @@
 		<titleShort>lusty</titleShort>
 		<baseDescription>[PAWN_nameDef] is just a simple maid, sir, and has no idea what you imply.</baseDescription>
 		<slot>Adulthood</slot>
-		<maleCommonality>10</maleCommonality>
-		<femaleCommonality>30</femaleCommonality>
+		<maleCommonality>5</maleCommonality>
+		<femaleCommonality>15</femaleCommonality>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<spawnCategories>
@@ -396,8 +396,8 @@
 		<baseDescription>Facing the rough winter nights makes you appreciate a good hut. As such, a good builder like [PAWN_nameDef] is a valued member of any Saxhleel community.</baseDescription>
 		<slot>Childhood</slot>
 		<!-- Changed to Adulthood in 1.5 -->
-		<maleCommonality>50</maleCommonality>
-		<femaleCommonality>50</femaleCommonality>
+		<maleCommonality>60</maleCommonality>
+		<femaleCommonality>60</femaleCommonality>
 		<spawnCategories>
 			<li>ArgonianBackstory</li>
 		</spawnCategories>
@@ -483,8 +483,8 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<slot>Adulthood</slot>
-		<maleCommonality>20</maleCommonality>
-		<femaleCommonality>20</femaleCommonality>
+		<maleCommonality>50</maleCommonality>
+		<femaleCommonality>50</femaleCommonality>
 		<requiredWorkTags>
 			<li>Violent</li>
 		</requiredWorkTags>
@@ -514,8 +514,8 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<slot>Adulthood</slot>
-		<maleCommonality>20</maleCommonality>
-		<femaleCommonality>20</femaleCommonality>
+		<maleCommonality>50</maleCommonality>
+		<femaleCommonality>50</femaleCommonality>
 		<requiredWorkTags>
 			<li>Animals</li>
 		</requiredWorkTags>
@@ -545,8 +545,8 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<slot>Adulthood</slot>
-		<maleCommonality>20</maleCommonality>
-		<femaleCommonality>20</femaleCommonality>
+		<maleCommonality>50</maleCommonality>
+		<femaleCommonality>50</femaleCommonality>
 		<requiredWorkTags>
 			<li>PlantWork</li>
 		</requiredWorkTags>
@@ -572,8 +572,8 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<slot>Adulthood</slot>
-		<maleCommonality>20</maleCommonality>
-		<femaleCommonality>20</femaleCommonality>
+		<maleCommonality>50</maleCommonality>
+		<femaleCommonality>50</femaleCommonality>
 		<requiredWorkTags>
 			<li>Violent</li>
 		</requiredWorkTags>
@@ -599,8 +599,8 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<slot>Adulthood</slot>
-		<maleCommonality>20</maleCommonality>
-		<femaleCommonality>20</femaleCommonality>
+		<maleCommonality>35</maleCommonality>
+		<femaleCommonality>35</femaleCommonality>
 		<requiredWorkTags>
 			<li>Cooking</li>
 		</requiredWorkTags>
@@ -654,8 +654,8 @@
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<slot>Adulthood</slot>
-		<maleCommonality>20</maleCommonality>
-		<femaleCommonality>20</femaleCommonality>
+		<maleCommonality>35</maleCommonality>
+		<femaleCommonality>35</femaleCommonality>
 		<requiredWorkTags>
 			<li>Cooking</li>
 			<li>Mining</li>
@@ -746,8 +746,8 @@
 		<titleShort>shadowscale</titleShort>
 		<baseDescription>[PAWN_nameDef] had spent years refining [PAWN_possessive] skills of infiltration and assassination. [PAWN_pronoun] is persuasive, stealthy, and ruthless. A deadly adversary.</baseDescription>
 		<slot>Adulthood</slot>
-		<maleCommonality>20</maleCommonality>
-		<femaleCommonality>20</femaleCommonality>
+		<maleCommonality>15</maleCommonality>
+		<femaleCommonality>15</femaleCommonality>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
 		<spawnCategories>
