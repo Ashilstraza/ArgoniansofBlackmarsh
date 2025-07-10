@@ -75,7 +75,7 @@
 		<canSiege>true</canSiege>
 		<canStageAttacks>true</canStageAttacks>
 		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
-		<arrivalLayerBlacklist>
+		<arrivalLayerBlacklist IgnoreIfNoMatchingField="True">
 			<li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
 		</arrivalLayerBlacklist>
 		<colorSpectrum>
