@@ -8,6 +8,7 @@
 			<Mass>70</Mass>
 			<PsychicSensitivity>1.1</PsychicSensitivity>
 			<PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">1.25</PsychicEntropyRecoveryRate>
+			<FishingSpeed MayRequire="Ludeon.RimWorld.Odyssey">1.25</FishingSpeed>
 			<ComfyTemperatureMin>4</ComfyTemperatureMin>
 			<ComfyTemperatureMax>32</ComfyTemperatureMax>
 			<LeatherAmount>75</LeatherAmount>
