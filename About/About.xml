@@ -20,6 +20,9 @@
 	<modDependencies>
 		<li>
 			<packageId>erdelf.HumanoidAlienRaces</packageId>
+			<alternativePackageIds IgnoreIfNoMatchingField="True">
+				<li>erdelf.HumanoidAlienRaces.dev</li>
+			</alternativePackageIds>
 			<displayName>Humanoid Alien Races</displayName>
 			<steamWorkshopUrl>steam://url/CommunityFilePage/839005762</steamWorkshopUrl>
 			<downloadUrl>https://github.com/erdelf/AlienRaces/releases/latest</downloadUrl>
