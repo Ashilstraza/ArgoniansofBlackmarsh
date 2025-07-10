@@ -45,7 +45,7 @@
 		<li IfModActive="automatic.bionicicons,automatic.bionicicons_copy">ModSpecific/Bionic_Icons</li>
 		<li IfModActive="NunahurAlShamikh.MedP,NunahurAlShamikh.MedP_copy">ModSpecific/Medieval_Prosthetics_1.5</li>
 	</v1.5>
-	<v1.5>
+	<v1.6>
 		<li>Common</li>
 		<li>1.6</li>
 		<li IfModActive="Ludeon.Rimworld.Royalty">ModSpecific/Royalty</li>
@@ -55,5 +55,5 @@
 		<li IfModActive="Safe.Job.World,rim.job.world,Safe.Job.World_copy,rim.job.world_copy">ModSpecific/That_Mod</li>
 		<li IfModActive="automatic.bionicicons,automatic.bionicicons_copy">ModSpecific/Bionic_Icons</li>
 		<li IfModActive="NunahurAlShamikh.MedP,NunahurAlShamikh.MedP_copy">ModSpecific/Medieval_Prosthetics_1.5</li>-->
-	</v1.5>
+	</v1.6>
 </loadFolders>
