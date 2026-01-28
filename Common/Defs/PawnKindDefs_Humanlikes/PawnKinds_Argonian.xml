@@ -96,6 +96,14 @@
 				</li>
 			</subOptionsChooseOne>
 		</inventoryOptions>
+		<modExtensions>
+			<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.LoadoutPropertiesExtension" Inherit="True">
+				<primaryMagazineCount>
+					<min>3</min>
+					<max>5</max>
+				</primaryMagazineCount>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	<!-- ============================ Argo Civilians ========================== -->
 	<PawnKindDef ParentName="ArgoCivBase">
@@ -175,6 +183,9 @@
 				<max>100</max>
 			</countRange>
 		</inventoryOptions>
+		<apparelRequired Inherit="True">
+			<li MayRequire="CETeam.CombatExtended">CE_Apparel_TribalBackpack</li>
+		</apparelRequired>
 	</PawnKindDef>
 	<!-- ============================ Argo Military Base ========================== -->
 	<PawnKindDef Name="ArgoMilBase" ParentName="ArgoBase" Abstract="True">
@@ -227,6 +238,17 @@
 				</li>
 			</subOptionsChooseOne>
 		</inventoryOptions>
+		<apparelRequired Inherit="True">
+			<li MayRequire="CETeam.CombatExtended">CE_Apparel_TribalBackpack</li>
+		</apparelRequired>
+		<modExtensions>
+			<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.LoadoutPropertiesExtension" Inherit="True">
+				<primaryMagazineCount>
+					<min>4</min>
+					<max>5</max>
+				</primaryMagazineCount>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	<!-- ============================ Argo Military ========================== -->
 	<PawnKindDef ParentName="ArgoMilBase">
@@ -288,6 +310,29 @@
 				</li>
 			</subOptionsChooseOne>
 		</inventoryOptions>
+		<modExtensions>
+			<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.LoadoutPropertiesExtension">
+				<shieldMoney>
+					<min>100</min>
+					<max>130</max>
+				</shieldMoney>
+				<shieldTags>
+					<li>TribalShield</li>
+				</shieldTags>
+				<shieldChance>0.6</shieldChance>
+				<sidearms>
+					<li>
+						<sidearmMoney>
+							<min>80</min>
+							<max>160</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>CE_Sidearm_Tribal</li>
+						</weaponTags>
+					</li>
+				</sidearms>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	<PawnKindDef ParentName="ArgoMilBase">
 		<defName>ArgoHistGuard</defName>
@@ -340,6 +385,18 @@
 				</li>
 			</subOptionsChooseOne>
 		</inventoryOptions>
+		<modExtensions>
+			<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.LoadoutPropertiesExtension">
+				<shieldMoney>
+					<min>120</min>
+					<max>170</max>
+				</shieldMoney>
+				<shieldTags>
+					<li>TribalShield</li>
+				</shieldTags>
+				<shieldChance>0.9</shieldChance>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	<PawnKindDef ParentName="ArgoMilBase">
 		<defName>ArgoShadowscale</defName>
@@ -394,5 +451,28 @@
 				</li>
 			</subOptionsChooseOne>
 		</inventoryOptions>
+		<modExtensions>
+			<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.LoadoutPropertiesExtension">
+				<shieldMoney>
+					<min>150</min>
+					<max>350</max>
+				</shieldMoney>
+				<shieldTags>
+					<li>TribalShield</li>
+				</shieldTags>
+				<shieldChance>0.9</shieldChance>
+				<sidearms>
+					<li>
+						<sidearmMoney>
+							<min>200</min>
+							<max>900</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>CE_Sidearm_Tribal</li>
+						</weaponTags>
+					</li>
+				</sidearms>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 </Defs>

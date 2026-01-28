@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Argonian"]/statBases</xpath>
+		<value>
+			<!-- Argonians are a hardy folk and fear is hard to find, they have strong backs and stronger nerves -->
+			<Suppressability>0.5</Suppressability>
+			<CarryWeight>75</CarryWeight>
+			<CarryBulk>50</CarryBulk>
+		</value>
+	</Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Argonian"]/tools</xpath>
+    <value>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>left fist</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>8</power>
+          <cooldownTime>1.6</cooldownTime>
+          <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+          <surpriseAttack>
+            <extraMeleeDamages>
+              <li>
+                <def>Stun</def>
+                <amount>22</amount>
+              </li>
+            </extraMeleeDamages>
+          </surpriseAttack>
+          <armorPenetrationBlunt>0.250</armorPenetrationBlunt>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>right fist</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>8</power>
+          <cooldownTime>1.6</cooldownTime>
+          <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+          <surpriseAttack>
+            <extraMeleeDamages>
+              <li>
+                <def>Stun</def>
+                <amount>22</amount>
+              </li>
+            </extraMeleeDamages>
+          </surpriseAttack>
+          <armorPenetrationBlunt>0.250</armorPenetrationBlunt>
+        </li>
+		<li Class="CombatExtended.ToolCE">
+			<label>teeth</label>
+			<capacities>
+				<li>Bite</li>
+			</capacities>
+			<power>11</power>
+			<cooldownTime>1.6</cooldownTime>
+			<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+			<armorPenetrationSharp>0.625</armorPenetrationSharp>
+			<chanceFactor>0.3</chanceFactor>
+		  </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>head</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>5</power>
+          <cooldownTime>1.9</cooldownTime>
+          <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+          <armorPenetrationBlunt>0.625</armorPenetrationBlunt>
+          <chanceFactor>0.2</chanceFactor>
+        </li>
+      </tools>
+    </value>
+  </Operation>
+</Patch>

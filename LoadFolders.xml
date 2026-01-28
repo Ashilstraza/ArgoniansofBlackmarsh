@@ -44,6 +44,7 @@
 		<li IfModActive="Safe.Job.World,rim.job.world,Safe.Job.World_copy,rim.job.world_copy">ModSpecific/That_Mod</li>
 		<li IfModActive="automatic.bionicicons,automatic.bionicicons_copy">ModSpecific/Bionic_Icons</li>
 		<li IfModActive="NunahurAlShamikh.MedP,NunahurAlShamikh.MedP_copy">ModSpecific/Medieval_Prosthetics_1.5</li>
+		<li IfModActive="CETeam.CombatExtended,CETeam.CombatExtended_copy">ModSpecific/CE/1.5</li>
 	</v1.5>
 	<v1.6>
 		<li>Common</li>
@@ -53,5 +54,6 @@
 		<li IfModActive="Safe.Job.World,rim.job.world,Safe.Job.World_copy,rim.job.world_copy">ModSpecific/That_Mod</li>
 		<li IfModActive="automatic.bionicicons,automatic.bionicicons_copy">ModSpecific/Bionic_Icons</li>
 		<li IfModActive="NunahurAlShamikh.MedP,NunahurAlShamikh.MedP_copy">ModSpecific/Medieval_Prosthetics_1.5</li>
+		<li IfModActive="CETeam.CombatExtended,CETeam.CombatExtended_copy">ModSpecific/CE/1.5</li>
 	</v1.6>
 </loadFolders>

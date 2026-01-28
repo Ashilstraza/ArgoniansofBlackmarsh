@@ -9,6 +9,7 @@
 			<depth>Outside</depth>
 			<groups>
 				<li>Torso</li>
+				<li MayRequire="CETeam.CombatExtended">CoveredByNaturalArmor</li>
 			</groups>
 			<parts>
 				<li>
@@ -110,6 +111,7 @@
 					<height>Top</height>
 					<groups>
 						<li>Neck</li>
+						<li MayRequire="CETeam.CombatExtended">CoveredByNaturalArmor</li>
 					</groups>
 					<parts>
 						<li>
@@ -119,6 +121,7 @@
 								<li>UpperHead</li>
 								<li>FullHead</li>
 								<li>HeadAttackTool</li>
+								<li MayRequire="CETeam.CombatExtended">CoveredByNaturalArmor</li>
 							</groups>
 							<parts>
 								<li>
@@ -149,8 +152,7 @@
 										<li>Eyes</li>
 									</groups>
 									<woundAnchorTag>LeftEye</woundAnchorTag>
-									<flipGraphic IgnoreIfNoMatchingField="True">true</flipGraphic>
-									<!-- 1.5 -->
+									<flipGraphic IgnoreIfNoMatchingField="True">true</flipGraphic><!-- 1.5 -->
 									<visibleHediffRots IgnoreIfNoMatchingField="True">
 										<!-- 1.5 -->
 										<li>South</li>
@@ -166,8 +168,7 @@
 										<li>Eyes</li>
 									</groups>
 									<woundAnchorTag>RightEye</woundAnchorTag>
-									<visibleHediffRots IgnoreIfNoMatchingField="True">
-										<!-- 1.5 -->
+									<visibleHediffRots IgnoreIfNoMatchingField="True"><!-- 1.5 -->
 										<li>South</li>
 										<li>East</li>
 									</visibleHediffRots>
@@ -176,8 +177,7 @@
 									<def>Ear</def>
 									<customLabel>left ear</customLabel>
 									<coverage>0.07</coverage>
-									<flipGraphic IgnoreIfNoMatchingField="True">true</flipGraphic>
-									<!-- 1.5 -->
+									<flipGraphic IgnoreIfNoMatchingField="True">true</flipGraphic><!-- 1.5 -->
 									<groups>
 										<li>UpperHead</li>
 										<li>FullHead</li>
@@ -197,6 +197,7 @@
 									<coverage>0.10</coverage>
 									<groups>
 										<li>FullHead</li>
+										<li MayRequire="CETeam.CombatExtended">CoveredByNaturalArmor</li>
 									</groups>
 								</li>
 								<li>
@@ -205,6 +206,7 @@
 									<groups>
 										<li>Teeth</li>
 										<li>FullHead</li>
+										<li MayRequire="CETeam.CombatExtended">CoveredByNaturalArmor</li>
 									</groups>
 									<parts>
 										<li>
@@ -227,6 +229,8 @@
 					<coverage>0.12</coverage>
 					<groups>
 						<li>Shoulders</li>
+						<li MayRequire="CETeam.CombatExtended">CoveredByNaturalArmor</li>
+						<li MayRequire="CETeam.CombatExtended">LeftShoulder</li>
 					</groups>
 					<woundAnchorTag>LeftShoulder</woundAnchorTag>
 					<flipGraphic IgnoreIfNoMatchingField="True">true</flipGraphic>
@@ -252,6 +256,8 @@
 							<!-- 1.5 -->
 							<groups>
 								<li>Arms</li>
+								<li MayRequire="CETeam.CombatExtended">CoveredByNaturalArmor</li>
+								<li MayRequire="CETeam.CombatExtended">LeftArm</li>
 							</groups>
 							<parts>
 								<li>
@@ -281,6 +287,7 @@
 									<!-- 1.5 -->
 									<groups>
 										<li>Hands</li>
+										<li MayRequire="CETeam.CombatExtended">CoveredByNaturalArmor</li>
 									</groups>
 									<parts>
 										<li>
@@ -290,6 +297,7 @@
 											<groups>
 												<li>Hands</li>
 												<li>LeftHand</li>
+												<li MayRequire="CETeam.CombatExtended">CoveredByNaturalArmor</li>
 											</groups>
 										</li>
 										<li>
@@ -299,6 +307,7 @@
 											<groups>
 												<li>Hands</li>
 												<li>LeftHand</li>
+												<li MayRequire="CETeam.CombatExtended">CoveredByNaturalArmor</li>
 											</groups>
 										</li>
 										<li>
@@ -308,6 +317,7 @@
 											<groups>
 												<li>Hands</li>
 												<li>LeftHand</li>
+												<li MayRequire="CETeam.CombatExtended">CoveredByNaturalArmor</li>
 											</groups>
 										</li>
 										<li>
@@ -317,6 +327,7 @@
 											<groups>
 												<li>Hands</li>
 												<li>LeftHand</li>
+												<li MayRequire="CETeam.CombatExtended">CoveredByNaturalArmor</li>
 											</groups>
 										</li>
 										<li>
@@ -326,6 +337,7 @@
 											<groups>
 												<li>Hands</li>
 												<li>LeftHand</li>
+												<li MayRequire="CETeam.CombatExtended">CoveredByNaturalArmor</li>
 											</groups>
 										</li>
 									</parts>
@@ -340,6 +352,8 @@
 					<coverage>0.12</coverage>
 					<groups>
 						<li>Shoulders</li>
+						<li MayRequire="CETeam.CombatExtended">CoveredByNaturalArmor</li>
+						<li MayRequire="CETeam.CombatExtended">RightShoulder</li>
 					</groups>
 					<woundAnchorTag>RightShoulder</woundAnchorTag>
 					<parts>
@@ -359,6 +373,8 @@
 							<coverage>0.77</coverage>
 							<groups>
 								<li>Arms</li>
+								<li MayRequire="CETeam.CombatExtended">CoveredByNaturalArmor</li>
+								<li MayRequire="CETeam.CombatExtended">RightArm</li>
 							</groups>
 							<parts>
 								<li>
@@ -386,6 +402,7 @@
 									<height>Bottom</height>
 									<groups>
 										<li>Hands</li>
+										<li MayRequire="CETeam.CombatExtended">CoveredByNaturalArmor</li>
 									</groups>
 									<parts>
 										<li>
@@ -395,6 +412,7 @@
 											<groups>
 												<li>Hands</li>
 												<li>RightHand</li>
+												<li MayRequire="CETeam.CombatExtended">CoveredByNaturalArmor</li>
 											</groups>
 										</li>
 										<li>
@@ -404,6 +422,7 @@
 											<groups>
 												<li>Hands</li>
 												<li>RightHand</li>
+												<li MayRequire="CETeam.CombatExtended">CoveredByNaturalArmor</li>
 											</groups>
 										</li>
 										<li>
@@ -413,6 +432,7 @@
 											<groups>
 												<li>Hands</li>
 												<li>RightHand</li>
+												<li MayRequire="CETeam.CombatExtended">CoveredByNaturalArmor</li>
 											</groups>
 										</li>
 										<li>
@@ -422,6 +442,7 @@
 											<groups>
 												<li>Hands</li>
 												<li>RightHand</li>
+												<li MayRequire="CETeam.CombatExtended">CoveredByNaturalArmor</li>
 											</groups>
 										</li>
 										<li>
@@ -431,6 +452,7 @@
 											<groups>
 												<li>Hands</li>
 												<li>RightHand</li>
+												<li MayRequire="CETeam.CombatExtended">CoveredByNaturalArmor</li>
 											</groups>
 										</li>
 									</parts>
@@ -453,6 +475,7 @@
 					<height>Bottom</height>
 					<groups>
 						<li>Torso</li>
+						<li MayRequire="CETeam.CombatExtended">CoveredByNaturalArmor</li>
 					</groups>
 				</li>
 				<li>
@@ -462,6 +485,7 @@
 					<height>Bottom</height>
 					<groups>
 						<li>Legs</li>
+						<li MayRequire="CETeam.CombatExtended">CoveredByNaturalArmor</li>
 					</groups>
 					<woundAnchorTag>LeftLeg</woundAnchorTag>
 					<flipGraphic IgnoreIfNoMatchingField="True">true</flipGraphic>
@@ -491,6 +515,7 @@
 							<coverage>0.1</coverage>
 							<groups>
 								<li>Feet</li>
+								<li MayRequire="CETeam.CombatExtended">CoveredByNaturalArmor</li>
 							</groups>
 							<flipGraphic IgnoreIfNoMatchingField="True">true</flipGraphic>
 							<!-- 1.5 -->
@@ -501,6 +526,7 @@
 									<coverage>0.06</coverage>
 									<groups>
 										<li>Feet</li>
+										<li MayRequire="CETeam.CombatExtended">CoveredByNaturalArmor</li>
 									</groups>
 								</li>
 								<li>
@@ -509,6 +535,7 @@
 									<coverage>0.07</coverage>
 									<groups>
 										<li>Feet</li>
+										<li MayRequire="CETeam.CombatExtended">CoveredByNaturalArmor</li>
 									</groups>
 								</li>
 								<li>
@@ -517,6 +544,7 @@
 									<coverage>0.08</coverage>
 									<groups>
 										<li>Feet</li>
+										<li MayRequire="CETeam.CombatExtended">CoveredByNaturalArmor</li>
 									</groups>
 								</li>
 								<li>
@@ -525,6 +553,7 @@
 									<coverage>0.09</coverage>
 									<groups>
 										<li>Feet</li>
+										<li MayRequire="CETeam.CombatExtended">CoveredByNaturalArmor</li>
 									</groups>
 								</li>
 								<li>
@@ -533,6 +562,7 @@
 									<coverage>0.09</coverage>
 									<groups>
 										<li>Feet</li>
+										<li MayRequire="CETeam.CombatExtended">CoveredByNaturalArmor</li>
 									</groups>
 								</li>
 							</parts>
@@ -546,6 +576,7 @@
 					<height>Bottom</height>
 					<groups>
 						<li>Legs</li>
+						<li MayRequire="CETeam.CombatExtended">CoveredByNaturalArmor</li>
 					</groups>
 					<woundAnchorTag>RightLeg</woundAnchorTag>
 					<parts>
@@ -573,6 +604,7 @@
 							<coverage>0.1</coverage>
 							<groups>
 								<li>Feet</li>
+								<li MayRequire="CETeam.CombatExtended">CoveredByNaturalArmor</li>
 							</groups>
 							<parts>
 								<li>
@@ -581,6 +613,7 @@
 									<coverage>0.06</coverage>
 									<groups>
 										<li>Feet</li>
+										<li MayRequire="CETeam.CombatExtended">CoveredByNaturalArmor</li>
 									</groups>
 								</li>
 								<li>
@@ -589,6 +622,7 @@
 									<coverage>0.07</coverage>
 									<groups>
 										<li>Feet</li>
+										<li MayRequire="CETeam.CombatExtended">CoveredByNaturalArmor</li>
 									</groups>
 								</li>
 								<li>
@@ -597,6 +631,7 @@
 									<coverage>0.08</coverage>
 									<groups>
 										<li>Feet</li>
+										<li MayRequire="CETeam.CombatExtended">CoveredByNaturalArmor</li>
 									</groups>
 								</li>
 								<li>
@@ -605,6 +640,7 @@
 									<coverage>0.09</coverage>
 									<groups>
 										<li>Feet</li>
+										<li MayRequire="CETeam.CombatExtended">CoveredByNaturalArmor</li>
 									</groups>
 								</li>
 								<li>
@@ -613,6 +649,7 @@
 									<coverage>0.09</coverage>
 									<groups>
 										<li>Feet</li>
+										<li MayRequire="CETeam.CombatExtended">CoveredByNaturalArmor</li>
 									</groups>
 								</li>
 							</parts>
