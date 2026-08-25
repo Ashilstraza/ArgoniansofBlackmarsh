@@ -581,10 +581,9 @@
 			</thoughtSettings>
 		</alienRace>
 		<comps>
-			<!-- Not Needed? -->
-			<!--<li MayRequire="CETeam.CombatExtended">
+			<li MayRequire="CETeam.CombatExtended">
 				<compClass>CombatExtended.CompPawnGizmo</compClass>
-			</li>-->
+			</li>
 			<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.CompProperties_Suppressable"/>
 		</comps>
 		<modExtensions>

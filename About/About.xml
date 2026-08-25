@@ -2,7 +2,7 @@
 <ModMetaData>
 	<name>Argonians of Blackmarsh</name>
 	<author>Ashilstraza</author>
-	<modVersion IgnoreIfNoMatchingField="True">1.6.1</modVersion>
+	<modVersion IgnoreIfNoMatchingField="True">1.6.3</modVersion>
 	<!-- 1.4+ -->
 	<modIconPath IgnoreIfNoMatchingField="True">World/ArgoBase</modIconPath>
 	<!-- 1.5 -->
@@ -33,6 +33,7 @@
 		<li>pyrce.swimming.modkit</li>
 		<li>vat.epoeforked</li>
 		<li>CETeam.CombatExtended</li>
+		<li>NunahurAlShamikh.MedP</li>
 	</loadAfter>
 	<description>
 Update of the original Argonian mod by Helixien and Xen and later was maintained by Mlie

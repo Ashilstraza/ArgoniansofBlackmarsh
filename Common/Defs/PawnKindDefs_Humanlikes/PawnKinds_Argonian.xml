@@ -26,6 +26,12 @@
 			<li>NeolithicRangedHeavy</li>
 			<li>NeolithicRangedChief</li>
 		</weaponTags>
+		<!--<moveSpeedFactorByTerrainTag>
+			<li>
+				<key>Water</key>
+				<value>1.1</value>
+			</li>
+		</moveSpeedFactorByTerrainTag>-->
 	</PawnKindDef>
 	<!-- ============================ Argo Player ========================== -->
 	<PawnKindDef ParentName="ArgoBase">
