@@ -2,7 +2,7 @@
 <ModMetaData>
 	<name>Argonians of Blackmarsh</name>
 	<author>Ashilstraza</author>
-	<modVersion IgnoreIfNoMatchingField="True">1.6.3</modVersion>
+	<modVersion IgnoreIfNoMatchingField="True">1.7.0</modVersion>
 	<!-- 1.4+ -->
 	<modIconPath IgnoreIfNoMatchingField="True">World/ArgoBase</modIconPath>
 	<!-- 1.5 -->
@@ -14,6 +14,7 @@
 		<li>1.4</li>
 		<li>1.5</li>
 		<li>1.6</li>
+		<li>1.7</li>
 	</supportedVersions>
 	<packageId>ashilstraza.races.argonians</packageId>
 	<url>https://steamcommunity.com/sharedfiles/filedetails/?id=3236320292</url>
@@ -36,11 +37,11 @@
 		<li>NunahurAlShamikh.MedP</li>
 	</loadAfter>
 	<description>
-Update of the original Argonian mod by Helixien and Xen and later was maintained by Mlie
-https://steamcommunity.com/sharedfiles/filedetails/?id=2018386837
+		Update of the original Argonian mod by Helixien and Xen and later was maintained by Mlie
+		https://steamcommunity.com/sharedfiles/filedetails/?id=2018386837
 
-Argonians (in their native tongue of Jel they call themselves the Saxhleel, or People of the Root) are the reptilian natives of Black Marsh, a vast swampland province in southeastern Tamriel. The other races often prefer to refer to them as 'lizards' or the 'Lizard Folk' instead, especially when meaning to be derogative. They are known as the foremost experts in guerrilla warfare throughout the Starry Heart, a reputation brought upon them by defending their borders from enemies for countless centuries.
+		Argonians (in their native tongue of Jel they call themselves the Saxhleel, or People of the Root) are the reptilian natives of Black Marsh, a vast swampland province in southeastern Tamriel. The other races often prefer to refer to them as 'lizards' or the 'Lizard Folk' instead, especially when meaning to be derogative. They are known as the foremost experts in guerrilla warfare throughout the Starry Heart, a reputation brought upon them by defending their borders from enemies for countless centuries.
 
-Original Authors: Helixien and Xen
+		Original Authors: Helixien and Xen
 	</description>
 </ModMetaData>
